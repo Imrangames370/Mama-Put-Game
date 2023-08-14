@@ -1,0 +1,509 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://scenes/entities/tables/Table_V_3.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/entities/player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/entities/tables/Table_H_3.tscn" type="PackedScene" id=3]
+[ext_resource path="res://imgs/atlas.png" type="Texture" id=4]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 621, 969, 96, 96 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 609, 882, 74, 72 )
+
+[node name="Game" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control3" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 144.0
+margin_bottom = 144.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control2" type="Control" parent="Control3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Control3/Control2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 167.0
+margin_right = -690.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Control3/Control2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 503.0
+margin_top = -1.0
+margin_right = -354.0
+margin_bottom = -448.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="Control3/Control2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 839.0
+margin_top = -1.0
+margin_right = -18.0
+margin_bottom = -448.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect4" type="ColorRect" parent="Control3/Control2"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1175.0
+margin_top = -1.0
+margin_right = 318.0
+margin_bottom = -448.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control" type="Control" parent="Control3"]
+modulate = Color( 0.305882, 0.45098, 0.270588, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Control3/Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -857.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Control3/Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 335.0
+margin_right = -522.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="Control3/Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 671.0
+margin_right = -186.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect4" type="ColorRect" parent="Control3/Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1007.0
+margin_right = 150.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect5" type="ColorRect" parent="Control3/Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1343.0
+margin_right = 486.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control3" type="Control" parent="Control3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -168.0
+margin_top = 152.0
+margin_right = -168.0
+margin_bottom = 152.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Control3/Control3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 167.0
+margin_right = -690.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Control3/Control3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 503.0
+margin_top = -1.0
+margin_right = -354.0
+margin_bottom = -448.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="Control3/Control3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 839.0
+margin_top = -1.0
+margin_right = -18.0
+margin_bottom = -448.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect4" type="ColorRect" parent="Control3/Control3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1175.0
+margin_top = -1.0
+margin_right = 318.0
+margin_bottom = -448.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control4" type="Control" parent="Control3"]
+modulate = Color( 0.305882, 0.45098, 0.270588, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -168.0
+margin_top = 152.0
+margin_right = -168.0
+margin_bottom = 152.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Control3/Control4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -857.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Control3/Control4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 335.0
+margin_right = -522.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="Control3/Control4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 671.0
+margin_right = -186.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect4" type="ColorRect" parent="Control3/Control4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1007.0
+margin_right = 150.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect5" type="ColorRect" parent="Control3/Control4"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1343.0
+margin_right = 486.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control5" type="Control" parent="Control3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 304.0
+margin_bottom = 304.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Control3/Control5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 167.0
+margin_right = -690.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Control3/Control5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 503.0
+margin_top = -1.0
+margin_right = -354.0
+margin_bottom = -448.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="Control3/Control5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 839.0
+margin_top = -1.0
+margin_right = -18.0
+margin_bottom = -448.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect4" type="ColorRect" parent="Control3/Control5"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1175.0
+margin_top = -1.0
+margin_right = 318.0
+margin_bottom = -448.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control6" type="Control" parent="Control3"]
+modulate = Color( 0.305882, 0.45098, 0.270588, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 304.0
+margin_bottom = 304.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Control3/Control6"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -857.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Control3/Control6"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 335.0
+margin_right = -522.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="Control3/Control6"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 671.0
+margin_right = -186.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect4" type="ColorRect" parent="Control3/Control6"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1007.0
+margin_right = 150.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect5" type="ColorRect" parent="Control3/Control6"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1343.0
+margin_right = 486.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control7" type="Control" parent="Control3"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -168.0
+margin_top = 456.0
+margin_right = -168.0
+margin_bottom = 456.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Control3/Control7"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 167.0
+margin_right = -690.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Control3/Control7"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 503.0
+margin_top = -1.0
+margin_right = -354.0
+margin_bottom = -448.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="Control3/Control7"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 839.0
+margin_top = -1.0
+margin_right = -18.0
+margin_bottom = -448.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect4" type="ColorRect" parent="Control3/Control7"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1175.0
+margin_top = -1.0
+margin_right = 318.0
+margin_bottom = -448.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Control8" type="Control" parent="Control3"]
+modulate = Color( 0.305882, 0.45098, 0.270588, 1 )
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -168.0
+margin_top = 456.0
+margin_right = -168.0
+margin_bottom = 456.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Control3/Control8"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -857.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Control3/Control8"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 335.0
+margin_right = -522.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect3" type="ColorRect" parent="Control3/Control8"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 671.0
+margin_right = -186.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect4" type="ColorRect" parent="Control3/Control8"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1007.0
+margin_right = 150.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect5" type="ColorRect" parent="Control3/Control8"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 1343.0
+margin_right = 486.0
+margin_bottom = -447.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Table_H_3" parent="Node2D" instance=ExtResource( 3 )]
+position = Vector2( 404, 217 )
+
+[node name="Table_H_4" parent="Node2D" instance=ExtResource( 3 )]
+position = Vector2( 404, 473 )
+
+[node name="Table_H_5" parent="Node2D" instance=ExtResource( 1 )]
+position = Vector2( 911, 329 )
+
+[node name="Sprite" type="Sprite" parent="Node2D"]
+position = Vector2( 728, 64 )
+texture = SubResource( 1 )
+
+[node name="Sprite2" type="Sprite" parent="Node2D"]
+position = Vector2( 728, 160 )
+texture = SubResource( 2 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 92, 238 )
