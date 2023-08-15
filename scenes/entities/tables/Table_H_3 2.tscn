@@ -1,0 +1,15 @@
+[gd_scene format=2]
+
+[node name="Table_H_3 2" type="Node2D"]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2( -80, 0 )
+scale = Vector2( 1, 0.446809 )
+color = Color( 1, 0.8, 0.333333, 1 )
+polygon = PoolVector2Array( -82, 0, 215, 0, 241, 94, -110, 94 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="."]
+position = Vector2( -75.8753, 36.2022 )
+scale = Vector2( 0.828235, 0.449438 )
+color = Color( 0.654404, 0.506231, 0.160495, 1 )
+polygon = PoolVector2Array( -139, 4, 286, 4, 286, 93, -139, 93 )

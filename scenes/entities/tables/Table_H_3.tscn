@@ -11,6 +11,7 @@ region = Rect2( 203, 120, 481, 147 )
 extents = Vector2( 235, 71 )
 
 [node name="Table_H_3" type="Node2D"]
+scale = Vector2( 0.3, 0.3 )
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = SubResource( 1 )

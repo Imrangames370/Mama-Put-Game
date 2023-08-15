@@ -1,0 +1,13 @@
+[gd_scene format=2]
+
+[node name="Spoon" type="Node2D"]
+
+[node name="Polygon2D2" type="Polygon2D" parent="."]
+position = Vector2( -60, 0 )
+color = Color( 0.243137, 0.219608, 0.0196078, 1 )
+polygon = PoolVector2Array( 50, -24, 53, -15, 58, -12, 58, 21, 57, 39, 65, 39, 62, 20, 62, -12, 67, -14, 70, -25, 67, -35, 60, -37, 52, -34 )
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2( -60, -2 )
+color = Color( 0.945098, 0.858824, 0.0588235, 1 )
+polygon = PoolVector2Array( 50, -24, 53, -15, 58, -12, 58, 21, 57, 39, 65, 39, 62, 20, 62, -12, 67, -14, 70, -25, 67, -35, 60, -37, 52, -34 )

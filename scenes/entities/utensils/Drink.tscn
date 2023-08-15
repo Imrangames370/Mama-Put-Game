@@ -1,0 +1,48 @@
+[gd_scene format=2]
+
+[node name="Drink" type="Node2D"]
+
+[node name="Polygon2D7" type="Polygon2D" parent="."]
+visible = false
+position = Vector2( 0, 3 )
+color = Color( 0.145098, 0.145098, 0.145098, 1 )
+polygon = PoolVector2Array( 6, -65, 5, -54, 2, -52, 2, -26, 13, -18, 15, -7, 10, 4, 16, 9, 22, 33, 17, 46, -17, 46, -22, 33, -21, 13, -14, 6, -18, -3, -19, -14, -6, -27, -7, -51, -10, -55, -10, -65 )
+
+[node name="Polygon2D5" type="Polygon2D" parent="."]
+visible = false
+polygon = PoolVector2Array( 6, -65, 5, -54, 2, -52, 2, -26, 13, -18, 15, -7, 10, 4, 16, 9, 22, 33, 17, 46, -17, 46, -22, 33, -21, 13, -14, 6, -18, -3, -19, -14, -6, -27, -7, -51, -10, -55, -10, -65 )
+
+[node name="Polygon2D6" type="Polygon2D" parent="."]
+visible = false
+position = Vector2( 1.07288e-06, -0.917648 )
+scale = Vector2( 0.909091, 0.976471 )
+color = Color( 0.921569, 1, 0.129412, 1 )
+polygon = PoolVector2Array( -1.18017e-06, -37.9759, 1.1, -25.6867, 12.1, -17.494, 15, -7, 8.8, 6.06024, 15.4, 11.1807, 22, 33, 17, 46, -17, 46, -22, 33, -20.9, 14.253, -14.3, 7.08434, -18, -3, -19, -14, -5.5, -25.6867, -6, -38 )
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+position = Vector2( -2.45455, -19.0263 )
+scale = Vector2( 0.590909, 0.907895 )
+color = Color( 0.117647, 0.117647, 0.117647, 1 )
+polygon = PoolVector2Array( 2.25, -15.3913, 37.5216, -1.13634, 38, 18, 26, 49, 13.3731, 54, -9.28358, 53, -17, 49, -28, 15, -27.1256, -1.17645 )
+
+[node name="Polygon2D3" type="Polygon2D" parent="."]
+position = Vector2( -2.88057, -16.8367 )
+scale = Vector2( 0.611408, 0.673469 )
+color = Color( 0.121569, 0.121569, 0.121569, 1 )
+polygon = PoolVector2Array( -25, -14, -12.7542, -22, 1.55224, -24, 17.3134, -23, 32, -18, 40.6939, -1.72727, 38, 18, 24.209, 23, 3.52239, 25, -16.1791, 21, -28, 15, -27.1256, -1.17645 )
+
+[node name="Polygon2D8" type="Polygon2D" parent="."]
+position = Vector2( -2.15152, -14.998 )
+scale = Vector2( 0.530303, 0.814777 )
+color = Color( 1, 0.956863, 0, 1 )
+polygon = PoolVector2Array( 2.25, -15.3913, 37.5216, -1.13634, 38, 18, 26, 49, 13.3731, 54, -9.28358, 53, -17, 49, -28, 15, -27.1256, -1.17645 )
+
+[node name="Polygon2D4" type="Polygon2D" parent="."]
+position = Vector2( -2.11079, -14.2857 )
+scale = Vector2( 0.518771, 0.571429 )
+color = Color( 1, 0.956863, 0, 1 )
+polygon = PoolVector2Array( -25, -14, -12.7542, -22, 1.55224, -24, 17.3134, -23, 32, -18, 40.6939, -1.72727, 38, 18, 24.209, 23, 3.52239, 25, -16.1791, 21, -28, 15, -27.1256, -1.17645 )
+
+[node name="Polygon2D2" type="Polygon2D" parent="."]
+color = Color( 0.0627451, 0.0627451, 0.0627451, 1 )
+polygon = PoolVector2Array( -19, -19, -14, -1, 0, 3, 8, 0, 15, -3, 19, -15, 19, -4, 12, 3, 2, 6, -10, 4, -17, -1 )
