@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/helper/drag_n_drop/Drag_n_Drop_component.gd" type="Script" id=1]
+
+[node name="Drag_n_Drop_component" type="Node" groups=["Drag_n_Drop_component"]]
+script = ExtResource( 1 )

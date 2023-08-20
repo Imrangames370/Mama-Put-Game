@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://scenes/helper/ghost/Ghost_component.gd" type="Script" id=1]
+
+[node name="Ghost_component" type="Node2D" groups=["Ghost_component"]]
+script = ExtResource( 1 )
