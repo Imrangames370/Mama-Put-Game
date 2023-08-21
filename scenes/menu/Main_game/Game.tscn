@@ -22,9 +22,6 @@ region = Rect2( 609, 882, 74, 72 )
 anchor_right = 1.0
 anchor_bottom = 1.0
 mouse_filter = 2
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false
@@ -52,7 +49,7 @@ scale = Vector2( 0.4, 0.4 )
 position = Vector2( -126, -14 )
 
 [node name="Chair" parent="Node2D/Table_H_3 2" instance=ExtResource( 7 )]
-position = Vector2( -127, 41 )
+position = Vector2( -129, 44 )
 scale = Vector2( 0.2, 0.2 )
 
 [node name="Tray2" parent="Node2D/Table_H_3 2" instance=ExtResource( 1 )]
@@ -60,7 +57,7 @@ position = Vector2( -14.303, -55.0604 )
 scale = Vector2( 0.4, 0.4 )
 
 [node name="Chair2" parent="Node2D/Table_H_3 2" instance=ExtResource( 7 )]
-position = Vector2( -15, 41 )
+position = Vector2( -16.9999, 44 )
 scale = Vector2( 0.2, 0.2 )
 
 [node name="Tray3" parent="Node2D/Table_H_3 2" instance=ExtResource( 1 )]
