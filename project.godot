@@ -9,37 +9,19 @@
 config_version=4
 
 _global_script_classes=[ {
-"base": "HBoxContainer",
-"class": "ContributorClass",
+"base": "KinematicBody2D",
+"class": "Actor",
 "language": "GDScript",
-"path": "res://addons/github-integration/scripts/ContributorClass.gd"
-}, {
-"base": "PanelContainer",
-"class": "GistItem",
-"language": "GDScript",
-"path": "res://addons/github-integration/scripts/GistItem.gd"
+"path": "res://scenes/Actors/Actor.gd"
 }, {
 "base": "TextureRect",
 "class": "Ingredient",
 "language": "GDScript",
 "path": "res://scenes/CookingRecipe/FoodItems/BaseIngredient.gd"
-}, {
-"base": "HBoxContainer",
-"class": "InvitationItem",
-"language": "GDScript",
-"path": "res://addons/github-integration/scripts/InvitationItem.gd"
-}, {
-"base": "PanelContainer",
-"class": "RepositoryItem",
-"language": "GDScript",
-"path": "res://addons/github-integration/scripts/RepositoryItem.gd"
 } ]
 _global_script_class_icons={
-"ContributorClass": "",
-"GistItem": "",
-"Ingredient": "",
-"InvitationItem": "",
-"RepositoryItem": ""
+"Actor": "",
+"Ingredient": ""
 }
 
 [application]
@@ -62,7 +44,7 @@ window/stretch/aspect="keep"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/github-integration/plugin.cfg" )
+enabled=PoolStringArray(  )
 
 [input]
 

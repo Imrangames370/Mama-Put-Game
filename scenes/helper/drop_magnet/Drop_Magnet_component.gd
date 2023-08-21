@@ -11,7 +11,6 @@ func _ready():
 
 func _process(delta):
 	for body in $Area2D.get_overlapping_areas():
-#		print(_TYPE.keys()[_type])
 		if body.get_parent().is_in_group((_TYPE.keys()[_type])):
 
 			for v in body.get_parent().get_children():
@@ -20,6 +19,7 @@ func _process(delta):
 					
 				if v.is_in_group("Drag_n_Drop_component"):
 					if not v.is_dragging:
+						print("Yep")
 						body.get_parent().position = position
 						pass
 						
