@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://scenes/entities/tray/Tray.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/entities/player/Player.tscn" type="PackedScene" id=2]
@@ -7,6 +7,11 @@
 [ext_resource path="res://scenes/entities/tables/Table_H_3 2.tscn" type="PackedScene" id=6]
 [ext_resource path="res://scenes/entities/chair/Chair.tscn" type="PackedScene" id=7]
 [ext_resource path="res://scenes/entities/customers/Customer_A.tscn" type="PackedScene" id=8]
+
+[sub_resource type="NavigationPolygon" id=3]
+vertices = PoolVector2Array( 984, 40, 984, 564, 42, 564, 42, 40 )
+polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
+outlines = [ PoolVector2Array( 42, 40, 42, 564, 984, 564, 984, 40 ) ]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
@@ -18,20 +23,19 @@ flags = 4
 atlas = ExtResource( 4 )
 region = Rect2( 609, 882, 74, 72 )
 
-[node name="Game" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
-mouse_filter = 2
+[node name="MainScene" type="Node2D"]
 
-[node name="ColorRect" type="ColorRect" parent="."]
-visible = false
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="Navigation2D" type="Navigation2D" parent="." groups=["navigator"]]
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D"]
+navpoly = SubResource( 3 )
 __meta__ = {
-"_edit_use_anchors_": false
+"_editor_description_": ""
 }
 
 [node name="floor" parent="." instance=ExtResource( 5 )]
+margin_right = 1024.0
+margin_bottom = 600.0
 
 [node name="Node2D" type="YSort" parent="."]
 

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://scenes/entities/tables/BaseTable.gd" type="Script" id=1]
+[ext_resource path="res://scenes/entities/ItemArea.tscn" type="PackedScene" id=2]
+
+[node name="BaseTable" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+[node name="AvailableAreas" type="Node2D" parent="."]
+
+[node name="ItemArea" parent="AvailableAreas" instance=ExtResource( 2 )]
