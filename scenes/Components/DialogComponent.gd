@@ -12,7 +12,10 @@ export (String, FILE, "*json") var dialog_file_path
 
 var current_text
 
-func _load_dialog_file() -> Array:
+func _ready():
+	current_text = load_dialog_file()[0].text
+
+func load_dialog_file() -> Array:
 	var file = File.new()
 
 	# Check If Dialog File Exists
@@ -26,4 +29,9 @@ func _load_dialog_file() -> Array:
 
 func display_text() -> void:
 	bbcode_text = current_text
-	tween.interpolate_property(self, "percent_visible", 0.0, 1.0, len(current_text) * text_speed, tween.EASE_IN_OUT)
+	tween.interpolate_property(self, "percent_visible", 0.0, 1.0, len(current_text) * text_speed, tween.TRANS_LINEAR, tween.EASE_IN_OUT)
+	tween.start()
+
+func _unhandled_input(event):
+	if event.is_action_pressed("ui_accept"):
+		display_text()

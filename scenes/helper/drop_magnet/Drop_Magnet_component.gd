@@ -19,7 +19,6 @@ func _process(delta):
 					
 				if v.is_in_group("Drag_n_Drop_component"):
 					if not v.is_dragging:
-						print("Yep")
 						body.get_parent().position = position
 						pass
 						
