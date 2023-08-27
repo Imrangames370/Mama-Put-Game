@@ -7,8 +7,8 @@ onready var sprite : = $Sprite
 export(float) var spawn_duration := 5.0
 export var customer_scene: PackedScene
 
-const DOOR_OPEN = preload("res://imgs/IMG_20230813_133901.JPG")
-const DOOR_CLOSED = preload("res://imgs/IMG_20230813_133901.JPG")
+const DOOR_OPEN = preload("res://imgs/door-opened.png")
+const DOOR_CLOSED = preload("res://imgs/door.png")
 
 var door_closed := true setget set_door_closed
 
