@@ -199,10 +199,10 @@ autostart = true
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="Navigation2D/EnemyShip"]
 target_desired_distance = 20.0
+path_max_distance = 60.0
 radius = 60.0
 neighbor_dist = 200.0
 max_speed = 350.0
-path_max_distance = 60.0
 
 [node name="Line2D" type="Line2D" parent="Navigation2D"]
 points = PoolVector2Array( 1530, 659 )

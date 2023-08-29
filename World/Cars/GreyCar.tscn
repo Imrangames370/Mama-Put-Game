@@ -1,0 +1,5 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://World/Cars/base_car.tscn" type="PackedScene" id=1]
+
+[node name="GreyCar" instance=ExtResource( 1 )]
