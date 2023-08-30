@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://scenes/entities/utensils/Plate.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/entities/utensils/Spoon.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scenes/entities/utensils/Fork.tscn" type="PackedScene" id=3]
-[ext_resource path="res://scenes/entities/utensils/Drink.tscn" type="PackedScene" id=4]
-[ext_resource path="res://scenes/helper/drag_n_drop/Drag_n_Drop_component.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/DecorativeItems/utensils/Plate.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/DecorativeItems/utensils/Spoon.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/DecorativeItems/utensils/Fork.tscn" type="PackedScene" id=3]
+[ext_resource path="res://scenes/DecorativeItems/utensils/Drink.tscn" type="PackedScene" id=4]
+[ext_resource path="res://scenes/Components/Drag_Component.tscn" type="PackedScene" id=5]
 [ext_resource path="res://scenes/helper/ghost/Ghost_component.tscn" type="PackedScene" id=6]
 
 [sub_resource type="RectangleShape2D" id=1]
