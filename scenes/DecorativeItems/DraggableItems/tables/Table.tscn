@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://imgs/House asset blackcat.png" type="Texture" id=1]
+[ext_resource path="res://scenes/DecorativeItems/DraggableItems/DraggableItem.tscn" type="PackedScene" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 58, 24 )
+
+[node name="Table" instance=ExtResource( 2 )]
+
+[node name="Sprite" type="Sprite" parent="." index="0"]
+scale = Vector2( 2.5, 2.5 )
+texture = ExtResource( 1 )
+region_enabled = true
+region_rect = Rect2( 208, 32, 48, 32 )
+
+[node name="CollisionShape2D" parent="." index="1"]
+position = Vector2( 0, -14 )
+shape = SubResource( 1 )

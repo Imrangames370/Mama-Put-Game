@@ -14,10 +14,15 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://scenes/Actors/Actor.gd"
 }, {
+"base": "Node",
+"class": "Draggable",
+"language": "GDScript",
+"path": "res://scenes/Components/Drag_Component.gd"
+}, {
 "base": "TextureRect",
 "class": "Ingredient",
 "language": "GDScript",
-"path": "res://scenes/CookingRecipe/FoodItems/BaseIngredient.gd"
+"path": "res://scenes/FoodItems/BaseIngredient.gd"
 }, {
 "base": "KinematicBody2D",
 "class": "Player",
@@ -26,6 +31,7 @@ _global_script_classes=[ {
 } ]
 _global_script_class_icons={
 "Actor": "",
+"Draggable": "",
 "Ingredient": "",
 "Player": ""
 }
