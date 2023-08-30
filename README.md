@@ -1,13 +1,13 @@
-# Ma' D: Resturant Story
+# Mama Put: Resturant Story
 ## Description
-Take your cooking skill to new height, in these fun & exciting 2D resturant simulator game. **"Ma' D: Resturant Story"** invites you to a world of vibrant culinary Nigerian Dish. Become a 5 star Local dish sechefller as you battle other food seller to become the number 1 MAMA OF THE STREET.
+Take your cooking skill to new height, in these fun & exciting 2D resturant simulator game. **"Mama Put: Resturant Story"** invites you to a world of vibrant culinary Nigerian Dish. Become a 5 star Local dish sechefller as you battle other food seller to become the number 1 MAMA OF THE STREET.
 
 ## Gameplay
-In **"Ma' D: Resturant Story"**, player take the role of a local food seller with dreams of becoming the MAMA(Title given to the best chef) of the street. From renting a small street food stall to becoming a restaurateur, player must navigate the challenges and rewards of the nigerian food scene. The game features intuitive touch controls, allowing players to prepare, cook, and serve a wide variety of authentic Nigerian dishes.
+In **"Mama Put: Resturant Story"**, player take the role of a local food seller with dreams of becoming the MAMA(Title given to the best chef) of the street. From renting a small street food stall to becoming a restaurateur, player must navigate the challenges and rewards of the nigerian food scene. The game features intuitive touch controls, allowing players to prepare, cook, and serve a wide variety of authentic Nigerian dishes.
 
 ## Features
 <ol>
-    <li>Nigerian Cuisine Showcase</li>
+    <li>Intriguing nigerian Cuisine Showcase</li>
     <li>Customization and Upgrades</li>
     <li>Time Management</li>
     <li>Local Flair</li>
@@ -15,36 +15,54 @@ In **"Ma' D: Resturant Story"**, player take the role of a local food seller wit
 </ol>
 
 ## Objectives
-The ultimate objective of **"Ma' D: Resturant Story"** is to create a thrieving experience, showcasing few insights on running a food joint in the Nigeria Community. Players will be challenged to expand their establishments, earn prestigious reward, and become the Number 1 Chef MaMa in the nigerian street food battle.
+The ultimate objective of **"Mama Put: Resturant Story"** is to create a thrieving experience, showcasing few insights on running a food joint in the Nigeria Community. Players will be challenged to expand their establishments, earn prestigious reward, and become the Number 1 Chef MaMa in the nigerian street food battle.
 
-**"Ma' D: Resturant Story"** promise an engaging experience like never before, that blends simulation, strategy, and cultural exploration. With its delightful visuals, authentic gameplay mechanics, and celebration of Nigerian traditions, this game is set to captivate from walks of all life. 
+**"Mama Put: Resturant Story"** promise an engaging experience like never before, that blends simulation, strategy, and cultural exploration. With its delightful visuals, authentic gameplay mechanics, and celebration of Nigerian traditions, this game is set to captivate from walks of all life. 
 
 ## TASK LIST
-- [ ] Actors or Character
+- [ ] Character's
     - Customers
-        - Paying Customers
-        - Credit Customers - Take food on credit
-    - Chef
+        - Navigate world and sit on chair if available
+        - Customer Animations
+        - Pay Money, then leave shop
     - Waiter
-    - And More
-- [ ] Game GUI
-    - MainScreen UI
-    - EndScreen UI
-    - Map Design
-    - HUD
-    - and more
-- [ ] Components
-    - Drag & Drop Component
-    - and more
-- [ ] Dialog System
-- [ ] Games Assets Build
-- [ ] User Interaction
+        - Navigate world to deliver food if customer available
+        - Waiter Animation
+    - Chef
+        - Navigate world too
+        - Food Prepare Animation
+- [ ] Settings
+    - Volume Settings
+    - Notifications Settings
+- [ * ] Camera
+    - Camera Zoom In&Out 
+    - Camera Drag & Follow
+- [ ] MainMenu & BackGround Loading
+- [ * ] Dialog Box System
+- [ ] Level Design
+- [ ] Sound Effect and Background Music Play
+- [ ] Land Grid
+- [ ] Interactive Object (e.g. Shops, Event)
+- [ ] To-Do / Accomplishment Section
+- [ ] Android Testing
+- [ ] Game Asset Build
+- [ ] Shops
+    - Buy food Items
+    - Food Cart Capacity
+    - Food Item CoolDown
+    - Food Item Price
+    - Food Item Given
+- [ ] Game Polishing
+- [ ] Code Review
+- [ * ] Cars Move using Path2D
+- [ ] User Interface
+    - Coin, Diamond Level Implementation
+- Item Upgrade
 
 > [!NOTE]
-> Make use of **TODO** comments to specify changes to be made, debugging and any information you might want others to know about.
+> Try to keep a clean code or make use of comments to make code more readable for others.
 
 > [!IMPORTANT]
-> Try to keep a clean code, to avoid futher issues or confusion.
 > Comment important session, for others benefit.
 > Scene that can't be tested independently should be specified at the top of it's script. 
 
