@@ -39,7 +39,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Cooking Game"
-run/main_scene="res://NavigationServer/NavigationServer2D/WithAvoidance/NavigationServer2DWithAvoidance2.tscn"
+run/main_scene="res://scenes/menu/Main_game/Game.tscn"
 config/icon="res://icon.png"
 
 [autoload]

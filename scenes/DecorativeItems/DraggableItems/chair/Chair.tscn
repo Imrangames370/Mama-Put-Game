@@ -18,5 +18,5 @@ region_rect = Rect2( 89, 16, 26, 48 )
 position = Vector2( 5, 17 )
 shape = SubResource( 1 )
 
-[connection signal="drag_began" from="Drag_n_Drop_component" to="." method="_on_Drag_n_Drop_component_drag_began"]
-[connection signal="drag_ended" from="Drag_n_Drop_component" to="." method="_on_Drag_n_Drop_component_drag_ended"]
+[node name="Timer" parent="." index="2"]
+wait_time = 2.0
