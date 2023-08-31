@@ -153,6 +153,7 @@ rotation = 1.5708
 [node name="FollowCamera" parent="." instance=ExtResource( 11 )]
 position = Vector2( 632, 355 )
 limit_bottom = 700
+zoom_speed = 0.3
 
 [node name="Chair" parent="." instance=ExtResource( 1 )]
 position = Vector2( 176, 288 )
