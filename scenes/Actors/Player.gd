@@ -9,9 +9,29 @@ var press_and_release = false
 # NAVIGATION STUFF:
 var new_velocity = Vector2.ZERO
 var movement_speed = 300.0
-var movement_target_position = Vector2(460, 180)
+onready var movement_target_position = get_parent().get_parent().get_node("moveTo/CollisionShape2D").global_position # where player should move to
 
 onready var navigation_agent = $NavigationAgent2D 
+
+
+func update_sprite_apperance():
+	if new_velocity.y < 0: # moving upward 
+		$front.hide()
+		$back.show()
+	elif new_velocity.y > 0: # moving dowwnward 
+		$front.show()
+		$back.hide()
+	else: # not moving diagonally or vertically
+#		return
+		$front.show()
+		$back.hide()
+	
+	
+	if new_velocity.x < 0 and $front.scale.x > 0: # moving upward 
+		$front.scale.x *= -1
+	elif new_velocity.x > 0 and $front.scale.x < 0:
+		$front.scale.x *= -1
+
 
 
 func _ready():
@@ -71,6 +91,8 @@ func _physics_process(delta):
 		$Sprite.material.set_shader_param("width", 0.0)
 		$Sprite.material.set_shader_param("outline_color", Color.black)
 
+	update_sprite_apperance()
+
 
 func _input(event):
 	if event is InputEventMouseMotion and is_dragging:
@@ -109,5 +131,6 @@ func _on_NavigationAgent2D_velocity_computed(safe_velocity):
 
 
 func _on_Timer_timeout():
+	movement_target_position = get_parent().get_parent().get_node("moveTo/CollisionShape2D").global_position 
 	navigation_agent.set_target_location(movement_target_position)
 	pass

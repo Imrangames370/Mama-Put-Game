@@ -1,21 +1,21 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://scenes/DecorativeItems/DraggableItems/chair/Chair.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Actors/Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://scenes/menu/Main_game/Game.gd" type="Script" id=3]
 [ext_resource path="res://scenes/DecorativeItems/spawner/spawner.tscn" type="PackedScene" id=4]
 [ext_resource path="res://scenes/DecorativeItems/floor/floor.tscn" type="PackedScene" id=5]
+[ext_resource path="res://scenes/DecorativeItems/DraggableItems/tables/Table.tscn" type="PackedScene" id=6]
+[ext_resource path="res://scenes/DecorativeItems/wall/Wall.tscn" type="PackedScene" id=7]
 [ext_resource path="res://imgs/CP_V1.0.4.png" type="Texture" id=9]
 [ext_resource path="res://World/Cars/GreyCar.tscn" type="PackedScene" id=10]
 [ext_resource path="res://camera/FollowCamera.tscn" type="PackedScene" id=11]
+[ext_resource path="res://scenes/DecorativeItems/DraggableItems/DraggableItem.tscn" type="PackedScene" id=12]
 
 [sub_resource type="NavigationPolygon" id=5]
 vertices = PoolVector2Array( 984, 40, 984, 564, 42, 564, 42, 40 )
 polygons = [ PoolIntArray( 0, 1, 2, 3 ) ]
 outlines = [ PoolVector2Array( 42, 40, 42, 564, 984, 564, 984, 40 ) ]
-
-[sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 179.5, 65.5 )
 
 [sub_resource type="TileSet" id=8]
 0/name = "CP_V1.0.4.png 0"
@@ -80,6 +80,9 @@ _data = {
 "points": PoolVector2Array( 0, 0, 0, 0, 1000, 640, 0, 0, 0, 0, 0, 640, 4.97584, 24.9847, -4.97584, -24.9847, -32, 608, 0, 0, 0, 0, -32, 24 )
 }
 
+[sub_resource type="CircleShape2D" id=10]
+radius = 34.4819
+
 [node name="MainScene" type="Node2D"]
 script = ExtResource( 3 )
 
@@ -109,26 +112,6 @@ position = Vector2( 832, 544 )
 resource = ExtResource( 2 )
 wait_time = 8.0
 
-[node name="StaticBody2D" type="KinematicBody2D" parent="Navigation2D"]
-position = Vector2( 248, 336 )
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Navigation2D/StaticBody2D"]
-position = Vector2( 169.5, 16.5 )
-shape = SubResource( 7 )
-
-[node name="NavigationObstacle2D" type="NavigationObstacle2D" parent="Navigation2D/StaticBody2D"]
-
-[node name="Navigation2D2" type="Navigation2D" parent="." groups=["navigator"]]
-visible = false
-
-[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Navigation2D2"]
-position = Vector2( 0, 1 )
-navpoly = SubResource( 5 )
-enabled = false
-__meta__ = {
-"_editor_description_": ""
-}
-
 [node name="Line2D" type="Line2D" parent="."]
 points = PoolVector2Array( 250, 231, 678, 471 )
 width = 7.0
@@ -150,10 +133,41 @@ rotation = 3.14159
 [node name="GreyCar" parent="Path2D/PathFollow2D" instance=ExtResource( 10 )]
 rotation = 1.5708
 
-[node name="FollowCamera" parent="." instance=ExtResource( 11 )]
-position = Vector2( 632, 355 )
-limit_bottom = 700
-zoom_speed = 0.3
-
 [node name="Chair" parent="." instance=ExtResource( 1 )]
 position = Vector2( 176, 288 )
+
+[node name="Table" parent="." instance=ExtResource( 6 )]
+position = Vector2( 281, 308 )
+
+[node name="walls" type="Node2D" parent="."]
+
+[node name="Wall" parent="walls" instance=ExtResource( 7 )]
+position = Vector2( 79, -83 )
+
+[node name="Wall2" parent="walls" instance=ExtResource( 7 )]
+position = Vector2( 257, -84 )
+
+[node name="Wall3" parent="walls" instance=ExtResource( 7 )]
+position = Vector2( 431, -83 )
+
+[node name="Wall4" parent="walls" instance=ExtResource( 7 )]
+position = Vector2( 609, -84 )
+
+[node name="Wall5" parent="walls" instance=ExtResource( 7 )]
+position = Vector2( 783, -83 )
+
+[node name="Wall6" parent="walls" instance=ExtResource( 7 )]
+position = Vector2( 961, -84 )
+
+[node name="FollowCamera" parent="." instance=ExtResource( 11 )]
+position = Vector2( 631, 355 )
+limit_bottom = 700
+zoom_speed = 0.7
+
+[node name="moveTo" parent="." instance=ExtResource( 12 )]
+position = Vector2( 272, 120 )
+
+[node name="CollisionShape2D" parent="moveTo" index="0"]
+shape = SubResource( 10 )
+
+[editable path="moveTo"]

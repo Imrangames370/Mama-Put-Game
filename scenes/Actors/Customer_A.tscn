@@ -1,6 +1,4 @@
-[gd_scene load_steps=2 format=2]
-
-[ext_resource path="res://scenes/Actors/Player.tscn" type="PackedScene" id=1]
+[gd_scene format=2]
 
 [node name="Customer_A" type="Node2D"]
 
@@ -17,11 +15,6 @@ polygon = PoolVector2Array( -6, -35, -14, -19.7059, -37, -9, 42, -9, 9, -21.2353
 [node name="Polygon2D3" type="Polygon2D" parent="."]
 color = Color( 0.627451, 0.0784314, 0.0784314, 1 )
 polygon = PoolVector2Array( -15, 3, -27, 8, -32, 25, -23, 28, -18, 50, -10, 50, -5, 37, 0, 37, 4, 49, 11, 50, 15, 28, 25, 21, 14, 4 )
-
-[node name="Player" parent="." instance=ExtResource( 1 )]
-visible = false
-modulate = Color( 1, 1, 1, 0.243137 )
-position = Vector2( -4, 8 )
 
 [node name="Polygon2D4" type="Polygon2D" parent="."]
 color = Color( 0.196078, 0.188235, 0.490196, 1 )

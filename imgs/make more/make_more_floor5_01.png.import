@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/House asset blackcat.png-1bb82c522f399215a120934a4f411d27.stex"
+path="res://.import/make_more_floor5_01.png-cbe6b0a06c99df535a7772f205ce42e3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://imgs/House asset blackcat.png"
-dest_files=[ "res://.import/House asset blackcat.png-1bb82c522f399215a120934a4f411d27.stex" ]
+source_file="res://imgs/make more/make_more_floor5_01.png"
+dest_files=[ "res://.import/make_more_floor5_01.png-cbe6b0a06c99df535a7772f205ce42e3.stex" ]
 
 [params]
 
@@ -20,7 +20,7 @@ compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
-flags/filter=false
+flags/filter=true
 flags/mipmaps=false
 flags/anisotropic=false
 flags/srgb=2

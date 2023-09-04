@@ -1,7 +1,13 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://imgs/House asset blackcat.png" type="Texture" id=1]
 [ext_resource path="res://scenes/DecorativeItems/DraggableItems/DraggableItem.tscn" type="PackedScene" id=2]
+[ext_resource path="res://imgs/make more/make_more_tables_small_01.png" type="Texture" id=3]
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 110, 34, 80, 46 )
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 58, 24 )
@@ -9,11 +15,17 @@ extents = Vector2( 58, 24 )
 [node name="Table" instance=ExtResource( 2 )]
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
+visible = false
 scale = Vector2( 2.5, 2.5 )
 texture = ExtResource( 1 )
 region_enabled = true
 region_rect = Rect2( 208, 32, 48, 32 )
 
-[node name="CollisionShape2D" parent="." index="1"]
+[node name="Sprite2" type="Sprite" parent="." index="1"]
+position = Vector2( 0, -2 )
+scale = Vector2( 1.47809, 1.47809 )
+texture = SubResource( 2 )
+
+[node name="CollisionShape2D" parent="." index="2"]
 position = Vector2( 0, -14 )
 shape = SubResource( 1 )
