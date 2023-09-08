@@ -92,6 +92,11 @@ func _physics_process(delta):
 		$Sprite.material.set_shader_param("outline_color", Color.black)
 
 	update_sprite_apperance()
+	
+	##Pause script
+	if Input.is_action_just_pressed("pause"):
+		get_tree().paused = true
+		$Pause.visible = true
 
 
 func _input(event):
@@ -134,3 +139,17 @@ func _on_Timer_timeout():
 	movement_target_position = get_parent().get_parent().get_node("moveTo/CollisionShape2D").global_position 
 	navigation_agent.set_target_location(movement_target_position)
 	pass
+
+
+func _on_Resume_pressed():
+	get_tree().paused = false 
+	$Pause.visible = false
+
+
+func _on_Restart_pressed():
+	get_tree().reload_current_scene()
+	get_tree().paused = false
+
+
+func _on_Quit_pressed():
+	get_tree().quit()
